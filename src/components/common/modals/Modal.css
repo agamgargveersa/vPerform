@@ -1,0 +1,87 @@
+.headerContainer{
+    padding: 0.5rem;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.300) ;
+}
+.headerSection{
+    display: flex;
+    padding: 0.2rem;
+    flex-direction: row;
+    background-color: #4264D0;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+.leftHeaderSection{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+.leftHeaderSection p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.rightHeaderSection{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.closeButton{
+    background-color: transparent;
+    border: none;
+}
+img{  
+    height: 1rem;
+    width: 1rem;
+}
+
+.contentContainer{
+    padding: 0.5rem;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.300);
+    overflow-y: auto;
+    
+}
+.contentContainer {
+    padding: 0.5rem;
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
+    overflow-y: auto;
+}
+.contentContainer::-webkit-scrollbar-button {
+    display: none;
+}
+.contentContainer::-webkit-scrollbar-track {
+    background-color: hsla(0, 0%, 0%, 0.1);
+}
+.contentContainer::-webkit-scrollbar-thumb {
+    background-color: #4264D0;
+    border-radius: 0.5rem;
+}
+.contentContainer::-webkit-scrollbar {
+    width: 0.5rem;
+}
+.contentSection{
+    padding: 1rem;
+}
+
+.footerContainer{
+    padding: 0.5rem;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: end;
+    padding-right: 1rem;
+}
+.actionButton{
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    background-color: #4264D0;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+  
