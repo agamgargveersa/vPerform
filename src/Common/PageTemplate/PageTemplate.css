@@ -1,0 +1,55 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .header {
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px ;
+    background: #4364D0;
+    border: 0.5px solid #E6E6E6;
+    box-shadow: 0px 2px 7px 0px #0000000F;
+  }
+  .header img {
+    width: 26px;
+    height: 26px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .header h1 {
+    font-family: Segoe UI;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+  }
+  .content {
+       height: 600px;
+      background: #FFFFFF;
+      border: 1px solid #C8C8C8;
+  } 
+  footer {
+    display: flex;
+    justify-content: flex-end;
+     background: #FFFFFF;
+     border-top: 1px solid #C8C8C8;
+     padding: 5px;
+  }
+  button {
+    padding: 12px 24px 12px 24px;
+    border-radius: 4px ;
+    background: #4364D0;
+    border: none; 
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+
+ 
+
+
+ 

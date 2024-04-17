@@ -1,11 +1,13 @@
 import './App.css';
+import ConfirmationPopup from './Common/ConfirmationPopup/ConfirmationPopup';
+import PageTemplate from './Common/PageTemplate/PageTemplate';
 
 function App() {
   return (
     <div className="App">
-      <div className="div1">
-        Hie!
-      </div>
+       <ConfirmationPopup/>  
+       {/* <PageTemplate/>  */}
+     
     </div>
   );
 }
