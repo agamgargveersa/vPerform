@@ -33,13 +33,13 @@ const Modal: React.FC<ModalProps> = ({
       }}
     >
       {/* header section start */}
-      <div className="headerContainer">
-      <div className="headerSection">
-        <div className="leftHeaderSection">
-          <img src={logo} alt="" />
+      <div className="modalHeaderContainer">
+      <div className="modalHeaderSection">
+        <div className="modalLeftHeaderSection">
+          <img src={logo} alt=""  className="logo"/>
           <p>{title}</p>
         </div>
-        <div className="rightHeaderSection">
+        <div className="modalRightHeaderSection">
           <button className="closeButton" onClick={onClose}>
             <img src={crossImage} alt="closeImage" className="crossImage" />
           </button>

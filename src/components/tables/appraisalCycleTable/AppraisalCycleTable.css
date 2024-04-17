@@ -1,0 +1,84 @@
+.mainContainer{
+    height: 100%;
+}
+.emptyRecordsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 1rem;
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid hsla(0, 0%, 0%, 0.3)
+}
+.searchContainer {
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    border-radius: 0.3rem;
+    display: flex;
+    padding: 0rem 1rem;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  
+  .searchInput {
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
+    flex: 1; 
+  }
+  
+  .searchInput:focus {
+    outline: none; 
+  }
+  
+  .search-input::placeholder {
+    color: hsla(0, 0%, 0%, 0.3); 
+  }
+  
+
+.configureButton{
+    background-color: transparent;
+    border: 1px solid #4264D0;
+    border-radius: 0.4rem;
+    padding: 0rem 1rem;
+}
+.buttonContainer{
+    display: flex;
+    color: #3C4063;
+    font-size: 1rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tableHeader{
+    background-color: #F0F7FF;
+}
+
+.tableContent{
+    background-color: #F9F9F9;
+}
+
+.actionButtonContainer{
+   display: flex;
+   gap: 1rem;
+}
+
+.editButton , .deleteButton{
+    background-color: transparent;
+    border: none;
+}
+
+.appraisalStatusDiv{
+    background-color: #FFFBDB;
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
+    color: #CFA100;
+    font-size: 1rem;
+}

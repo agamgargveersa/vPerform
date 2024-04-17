@@ -1,8 +1,8 @@
-.headerContainer{
+.modalHeaderContainer{
     padding: 0.5rem;
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.300) ;
 }
-.headerSection{
+.modalHeaderSection{
     display: flex;
     padding: 0.2rem;
     flex-direction: row;
@@ -12,17 +12,17 @@
     color: white;
     text-transform: capitalize;
 }
-.leftHeaderSection{
+.modalLeftHeaderSection{
     display: flex;
     align-items: center;
     gap: 1rem;
     padding-left: 2rem;
 }
-.leftHeaderSection p{
+.modalleftHeaderSection p{
     font-weight: 500;
     font-size: 1.1rem;
 }
-.rightHeaderSection{
+.modalRightHeaderSection{
     display: flex;
     align-items: center;
     padding-right: 1rem;
@@ -31,7 +31,7 @@
     background-color: transparent;
     border: none;
 }
-img{  
+.logo{  
     height: 1rem;
     width: 1rem;
 }
