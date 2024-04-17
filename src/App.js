@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
-import Sidebar from './components/common/Sidebar.tsx';
+import Sidebar from './components/common/sidebar/Sidebar.tsx';
 import Dashboard from './pages/Dashboard.tsx';
 import AppraisalCycle from './pages/AppraisalCycle.tsx';
 import AppraiseeView from './pages/AppraiseeView.tsx';
@@ -26,7 +26,7 @@ function App() {
 
         </Routes>
         </BrowserRouter>
-        <ConfirmationPopup/>  
+        
        {/* <PageTemplate/>  */}
       </div>
   

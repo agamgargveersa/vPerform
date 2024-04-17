@@ -1,11 +1,13 @@
 import React from 'react'
 
-const AppraisalCycle = () => {
-  return (
-    <div>
-      AppraisalCycle
-    </div>
-  )
+import ManageAppraiseeTable from '../components/tables/manageAppraiseeList/ManageAppraiseeList.tsx'
+
+
+
+function AppraisalCycle(){
+  return <>
+    {/* <ManageAppraiseeTable /> */}
+  </>
 }
 
 export default AppraisalCycle

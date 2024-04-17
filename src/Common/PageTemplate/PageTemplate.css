@@ -1,5 +1,6 @@
 
 .page-container {
+    margin-left: 5.625rem;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

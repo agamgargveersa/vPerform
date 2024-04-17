@@ -1,7 +1,7 @@
 import React from 'react';
 import './ConfirmationPopup.css';
-import confirm from '../../Assets/Images/confirm.svg';
-import remove from '../../Assets/Images/remove.svg';
+import confirm from '../../assets/Images/confirm.svg';
+import remove from '../../assets/Images/remove.svg';
 
 
 const ConfirmationPopup= () => {

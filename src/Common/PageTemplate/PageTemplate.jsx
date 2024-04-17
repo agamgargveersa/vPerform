@@ -1,5 +1,5 @@
 import {React} from 'react';
-import vector from '../../Assets/Images/vector.svg';
+import vector from '../../assets/Images/vector.svg';
 import './PageTemplate.css';
 
 
