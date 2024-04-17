@@ -33,6 +33,8 @@ export default function Sidebar() {
     {logo:Performance,title:'Performance Module',to:'performanceModule'},
     {logo:Settings,title:'Settings',to:'settings'}
   ]
+
+
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -64,9 +66,9 @@ export default function Sidebar() {
           </ListItem>
         </List>
         
-        <List sx={{marginTop:"2rem"}} disablePadding>
+        <List sx={{marginTop:"2rem",display:'flex',alignItems:'center',flexDirection:'column'}} disablePadding>
           {navElements.map((item, index) => (
-            <ListItem onClick={()=>setSelectedOption(item.title)} sx={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'spaced-evenly',backgroundColor:`${selectedOption===item.title?'#728DE4':'none'}`}} key={index} >
+            <ListItem onClick={()=>setSelectedOption(item.title)} sx={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'spaced-evenly',borderRadius:"0.5rem",width:"90%",backgroundColor:`${selectedOption===item.title?'#728DE4':'none'}`}} key={index} >
               <Link to={item.to} >
                 <ListItemButton >
                   <ListItemIcon sx={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'spaced-evenly'}}>
@@ -141,6 +143,14 @@ export default function Sidebar() {
     </Box>
   );
 
+  React.useEffect(()=>{
+    const currentPath = window.location.pathname;
+    const segments = currentPath.split('/');
+    const lastSegment = (segments[segments.length - 1]);
+    const currentPage =  navElements.find(obj => obj.to === lastSegment)?.title
+    setSelectedOption(currentPage)
+  },[])
+
   return (
     <div style={{overflow:'hidden',maxWidth:'85px',position:'fixed',left:'0'}}>
       <Box
@@ -186,18 +196,16 @@ export default function Sidebar() {
           
         </List>
       </Box>
-      {(['left'] as const).map((anchor) => (
-        <React.Fragment key={anchor}>
-          
+      
+        <React.Fragment >
           <Drawer
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
+            anchor={'left'}
+            open={state['left']}
+            onClose={toggleDrawer('left', false)}
           >
-            {list(anchor)}
+            {list('left')}
           </Drawer>
         </React.Fragment>
-      ))}
       
     </div>
   );
