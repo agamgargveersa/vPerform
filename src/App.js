@@ -6,6 +6,8 @@ import AppraisalCycle from './pages/AppraisalCycle.tsx';
 import AppraiseeView from './pages/AppraiseeView.tsx';
 import PerformanceModule from './pages/PerformanceModule.tsx';
 import Settings from './pages/Settings.tsx';
+import ConfirmationPopup from './Common/ConfirmationPopup/ConfirmationPopup';
+import PageTemplate from './Common/PageTemplate/PageTemplate';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
 
         </Routes>
         </BrowserRouter>
+        <ConfirmationPopup/>  
+       {/* <PageTemplate/>  */}
       </div>
   
   );
